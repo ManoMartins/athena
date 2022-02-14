@@ -1,0 +1,70 @@
+.mainBanner {
+  height: 400px;
+  width: 100vw;
+  max-width: 1920px;
+  padding: 0 1.5rem;
+
+  margin-top: 1.5rem;
+  .swiper-slide {
+    height: 100%;
+    width: 100%;
+  }
+
+}
+
+.bannerImage {
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0.25rem;
+  box-shadow: inset 40rem 0 3rem 0 #0b0b209f;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+
+  h1 {
+    color: #FFFFFF;
+    font-size: 3rem;
+    width: 16ch;
+  }
+}
+
+.wrapperInfos {
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+
+  span + span {
+    margin-left: 0.5rem;
+
+    &:before {
+      content: "|";
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.wrapperButton {
+  button {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background: #072536;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      filter: brightness(0.85);
+    }
+  }
+
+  button + button {
+    margin-left: 0.5rem;
+  }
+}
